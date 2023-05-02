@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yeminnaing.customviewassignment.viewpods.TasksItemViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_medium_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/task_rounded_background_rv"
+        android:padding="@dimen/margin_large">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInProgressMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/in_progress_lbl"
+            android:textColor="@color/colorSecondary"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/design_lbl"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTaskTitleMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvInProgressMain"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/contact_page_lbl"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_regular_3x" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMsgMain"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/tvTaskTitleMain"
+            android:layout_marginTop="@dimen/margin_large"
+            app:srcCompat="@drawable/chat" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMsgMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTaskTitleMain"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toEndOf="@+id/ivMsgMain"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLinkMain"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/tvTaskTitleMain"
+            android:layout_marginStart="@dimen/margin_medium_2"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toEndOf="@+id/tvMsgMain"
+            app:srcCompat="@drawable/paperclip" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTaskTitleMain"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_toEndOf="@+id/ivLinkMain"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/ivDegreeMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTaskTitleMain"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_xlarge"
+            android:text="@string/n_158_lbl"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_regular_2x" />
+
+        <com.yeminnaing.customviewassignment.components.RoundedProfileImage
+            android:id="@+id/ivProfileImageTask"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tvTaskTitleMain"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_medium_3"
+            android:elevation="@dimen/margin_medium"
+            android:scaleType="centerCrop"
+            app:cornerRadius="15dp"
+            app:srcCompat="@drawable/honeynweoo" />
+
+    </RelativeLayout>
+
+</com.yeminnaing.customviewassignment.viewpods.TasksItemViewPod>

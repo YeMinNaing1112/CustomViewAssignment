@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CustomViewAssignment</string>
+    <string name="omp_dashboard_lbl">OMP Dashboard</string>
+    <string name="in_progress_lbl">In Progress</string>
+    <string name="create_additional_npages_lbl">Create additional\nPages</string>
+    <string name="design_lbl">Design</string>
+    <string name="contact_page_lbl">Contact page</string>
+    <string name="n_158_lbl">N 158</string>
+    <string name="close_tasks_lbl">Close Tasks</string>
+    <string name="choose_your_client_lbl">Choose Your Client</string>
+    <string name="choose_date_lbl">Choose Date</string>
+    <string name="assignee_lbl">Assignee</string>
+    <string name="description_lbl">Description</string>
+</resources>

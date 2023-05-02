@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnMainBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium_2"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_black_24" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnMainBack"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_toEndOf="@+id/btnMainBack"
+                android:gravity="center"
+                android:text="@string/omp_dashboard_lbl"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_regular_3x"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnMainBack"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/margin_card_medium_2"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:backgroundTint="@color/colorSecondary"
+                android:text="@string/in_progress_lbl"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:cornerRadius="@dimen/margin_medium"
+                tools:ignore="RelativeOverlap" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitleMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnMainBack"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="start"
+                android:text="@string/create_additional_npages_lbl"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_heading_2x"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDaysMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleMain"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:gravity="start"
+                android:text="03 Days |"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitleMain"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_toEndOf="@+id/tvDaysMain"
+                android:gravity="start"
+                android:text="April 11 ,2023"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="@dimen/text_regular_2x" />
+
+            <RelativeLayout
+                android:id="@+id/flProfileImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDaysMain"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:layout_marginEnd="@dimen/margin_large">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvProfileImage"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/view_holder_profile_image" />
+
+                <com.yeminnaing.customviewassignment.components.CircularProgressBar
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    app:customIndicatorColor="@color/progressCircularBarColor"
+                    app:customProgress="85"
+                    app:customTrackColor="@color/colorSecondary" />
+
+            </RelativeLayout>
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/flProfileImages"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@drawable/task_background_main">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDataMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/margin_xlarge"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:text="Data"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="@dimen/text_regular_2x"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTitleTaskMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_xxlarge"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:layout_toEndOf="@+id/tvDataMain"
+                        android:text="Tasks"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="@dimen/text_regular_2x"
+                       />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/margin_xlarge"
+                        android:layout_marginEnd="@dimen/margin_xxlarge"
+                        android:text="Show in days"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="@dimen/text_regular_2x"
+                        tools:ignore="RelativeOverlap" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="@dimen/margin_medium_3"
+                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_light_24dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvTask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvTitleTaskMain"
+                        android:layout_marginStart="@dimen/margin_xxlarge"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:layout_toEndOf="@+id/tvDataMain"
+                        tools:listitem="@layout/viewpod_text_items" />
+
+                </RelativeLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
